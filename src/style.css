@@ -1,0 +1,56 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #8be9fd;
+    height: 80px;
+    border-top-width: 4px;
+    border-right-width: 8px;
+    border-bottom-width: 4px;
+    border-left-width: 8px;
+    border-radius: 0.75rem;
+    border-color: #a1e8cc;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .nombreInstr {
+    text-align: center;
+    white-space: nowrap;
+    text-transform: uppercase;
+    position: relative;
+    top: 0.25rem;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  
+  .precio {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.25rem;
+  }
+  
+  .carrito {
+    display: grid;
+    grid-template-rows: auto auto;
+    align-items: center;
+    position: relative;
+    bottom: 1rem;
+  }
+  
+  .btnCarrito {
+    outline: none;
+    height: 3rem;
+    background-color: #a1e8cc;
+    border-radius: 0.25rem;
+    width: 9rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .imagen:hover {
+    transform: scale(1.25);
+    cursor: pointer;
+  }
+  

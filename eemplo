@@ -1,0 +1,13 @@
+        <div class="card">
+                <h1 class="nombreInstr">Yamaha MODX7</h1>
+                <a href="">
+                    <img class="imagen" src="/imgs/novedad/modx7.png" alt="Yamaha MODX7" >
+                </a>    
+                <div class="carrito">
+                    <p class="precio">USD 2,500</p>
+                    <button class="btnCarrito">
+                        Agregar al carrito
+                    </button>
+                </div> 
+            </div>     
+    </div>

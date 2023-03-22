@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music store</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <header class="bg-gray-300  sticky top-0 z-10 flex flex-wrap justify-start sm:justify-center content-center align-middle h-20  float-right p-2 mb-24   xl:w-full md:w-screen sm:w-screen shadow-lg">
+        <div id="container" class="flex flex-wrap justify-center align-middle items-center md:mx-auto  ">
+        </button>
+        
+        <a  class="logo transition-all duration-700 relative right-16 sm:mx-auto" href="#"><img class="left-16 w-32 h-20 cursor-pointer" src="../imgs/logo.png" alt="logo" ></a>
+                <div class="flex flex-col justify-center ">
+                    <input class="outline-none w-790 bg-gray-200 rounded p-3 " type="text" name="" id="search" placeholder="Buscá tu producto..."><ul id="sugerencias"></ul></input>
+                </div>
+                    
+                <button class="btnS bg-gray-200 rounded relative w-12 h-12 right-8 hover:bg-gray-300">
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                </button>
+                
+                <button id="shopping.cart" class="s_cart flex  items-center justify-center relative ml-16 bg-logo p-2 rounded"> 
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                    <span class="counter text-2xl">
+                        
+                    </span>
+                    <!-- <div class="absolute  top-10 rounded h-12 w-24 bg-blue-400">
+                        dsgsdgsd    
+                
+                    </div> -->
+                </button>
+
+                
+            </div>
+            
+        </div>
+    </header>
+    <div id="dash" class="fixed z-10 flex float-left items-start transition-all duration-700 rounded-b-xl w-0 bg-logo h-64">
+        <button id="btn_dash"  class="mt-5 ml-2  hover:bg-gray-50  bg-opacity-50 rounded-full p-1 ">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </button>
+        
+        <div class="catalogo inline-block transition-all duration-700 relative right-64 leading-8 mt-24">
+            <a href="../src/instrumentos/pianos.html"><div class="hover:bg-gray-200 rounded-lg cursor-pointer text-center w-full font-medium">Pianos</div></a>
+            <div class=" hover:bg-gray-200 whitespace-nowrap rounded-lg cursor-pointer  w-full font-medium">Guitarras y bajos</div>
+            <div class="hover:bg-gray-200 rounded-lg cursor-pointer text-center w-28 font-medium">Sintetizadores</div>
+            <div class="hover:bg-gray-200 rounded-lg cursor-pointer text-center w-full font-medium">Percusión</div>
+        </div>
+    </div>
+    
+
+
+
+    <div id="content">
+    <h2 class="catalgo uppercase text-center relative bottom-12 font-medium text-3xl ">
+        Nuestro Catálogo
+    </h1>
+
+                                                <!-- Articulos   -->
+
+    <div id="products_list" 
+    class="container mx-auto mt-8 grid grid-cols-2 xl:grid-cols-4 md:grid-cols-2 xl:gap-8 grid-col-1 sm:gap-24   ">
+        <!-- Jupiter -->
+        <!-- <div id="jupiter_x" class="flex flex-col items-center border-2 border-y-4 border-x-1 rounded border-slate-100 shadow-lg shadow-sky-400 px-2 py-10">
+            <h1 class="text-center relative bottom-8">Roland Jupiter X</h1>
+            <img class="relative bottom-2" src="/imgs/jupiter-x.png" alt="Roland Jupiter X">
+            <p class="text-center">USD 4,500</p>
+            <button class=" agregar mt-4 outline-none py-2 bg-slate-100 rounded w-1/2 content-center">
+                Agregar al carrito
+            </button>
+        </div> -->
+
+        <!-- Pianos -->
+        <div id="articulo">
+            <h1 class="text-center relative bottom-8 uppercase text-2xl font-medium">Pianos</h1>
+            <a href="../src/instrumentos/pianos.html">
+                <img id="imgSize" class="relative h-32  bottom-4 top-4 hover:scale-125 cursor-pointer" src="../imgs/pianos/casio_px160.png" alt="" >
+            </a>
+        </div>
+
+        <div id="articulo">
+            <h1 class="text-center relative bottom-8 uppercase text-2xl font-medium">Guitarras y bajos</h1>
+            <a href="/src/instrumentos/guit,baj.html">
+                <img id="imgSize" class=" hover:scale-125 cursor-pointer" src="../imgs/guitarras/telecaster.png" alt="">
+            </a>
+        </div>
+
+        <div id="articulo">
+            <h1 class="text-center relative bottom-8 uppercase text-2xl font-medium">Sintetizadores</h1>
+            <img id="imgSize" class="relative bottom-4 top-12 hover:scale-125 cursor-pointer" src="../imgs/sintes/jupiter-x.png" alt="">
+        </div>
+                
+        <div id="articulo">
+            <h1 class="text-center relative bottom-8 uppercase text-2xl font-medium">Baterías y percusión</h1>
+            <img id="imgSize" class="hover:scale-125 cursor-pointer" src="../imgs/bateria/bateria_tama.png" alt="">
+        </div>
+        
+
+    </div>
+
+    <!-- Novedades -->
+    <h1 class="text-center top-12 font-medium text-3xl uppercase relative">Novedades</h1>
+    <div class="contNov container mx-auto mt-32 grid gap-8 grid-cols-4 " id="novedades">
+
+        <div class="card">
+            <h1 class="nombreInstr">Casio Privia PX-S1000</h1>
+            <div class=" h">
+            <a href="">
+                    <img class="imagen" src="../imgs/pianos/privia_px_s.png" alt="Casio Privia px-s1000" >
+                </a>
+            </div>
+            <div class="carrito">
+                <p class="text-center  font-medium text-lg">USD 1,000</p>
+                <button class="btnCarrito">
+                    Agregar al carrito
+                </button>
+            </div>
+        </div> 
+
+        <div class="card">
+                <h1 class="nombreInstr">Behringer Deepmind 12</h1>
+                <div class="">
+                    <a href="">
+                        <img class="imagen" src="../imgs/sintes/deepmind_.png" alt="Behringer Deepmind 12" >
+                    </a>
+                </div>
+                <div class="carrito">
+                    <p class="precio">USD 1,300</p>
+                    <button class="btnCarrito">
+                        Agregar al carrito
+                    </button>
+                </div>
+        </div> 
+
+        <div class="card">
+                <h1 class="nombreInstr">AKG K52</h1>
+                <a href="">
+                    <img class="imagen" src="../imgs/akg.png" alt="AKG K52" >
+                </a>
+                <div class="carrito">
+                    <p class="precio">USD 59</p>
+                    <button class="btnCarrito">
+                        Agregar al carrito
+                    </button>
+                </div>
+        </div> 
+
+        <div class="card">
+                <h1 class="nombreInstr">Yamaha MODX7</h1>
+                <a href="">
+                    <img class="imagen" src="../imgs/sintes/modx7.png" alt="Yamaha MODX7" >
+                </a>    
+                <div class="carrito">
+                    <p class="precio">USD 2,500</p>
+                    <button class="btnCarrito">
+                        Agregar al carrito
+                    </button>
+                </div> 
+            </div>     
+    </div>
+    
+</div>
+        <footer class="py-12 mt-16 bg-gray-300">
+            <div class="ml-4 text-center text-2xl">
+               <a class="" href="../src/quienessomos.html"> <p class="hover:scale-110 cursor-pointer inline-block mr-8 ">¿Quiénes somos?</p></a>
+               <a href="../src/faq.html"> <p class="hover:scale-110 cursor-pointer inline-block">Preguntas Frecuentes</p> </a>
+            </div>
+        </footer>
+
+        </body>
+        <script src="/js/script.js"></script>
+        </html>

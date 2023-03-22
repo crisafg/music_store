@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card{
+    @apply flex  flex-col justify-between  items-center border-2 h-80 border-y-4 border-x-cyan-300 border-x-8 rounded-xl border-slate-100 shadow-lg ;
+}
+
+.nombreInstr{
+    @apply text-center  uppercase relative top-1 text-2xl font-medium;
+}
+.precio{
+    @apply text-center font-medium text-lg;
+}
+
+    .carrito {
+        @apply  relative bottom-2 ;
+    }
+.btnCarrito{
+    @apply outline-none h-12 bg-slate-100 rounded w-36 content-center hover:bg-slate-200;
+}
+
+.imagen{
+    @apply  hover:scale-125 cursor-pointer; 
+}
+
+.sugerencia-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding: 8px;
+    position: relative;
+    /* top: 180px; */
+    width:  50rem;
+  }
+  
+  .sugerencia-item:hover{
+    background-color: #d4eef9;
+    cursor: pointer;
+  }
+  
+  /* .wrapper{
+    @apply p-4 text-2xl w-full rounded-lg  bg-logo
+  } */
+
+  #articulo{
+    @apply flex flex-col items-center border-2 ml-2 lg:ml-0 h-80 xl:h-80 md:h-[32rem] w-64  sm:w-72 border-y-4 border-x-cyan-300  border-x-8  rounded-xl border-slate-100 shadow-lg px-2 py-10;
+  }
+
+  #imgSize{
+    @apply h-28 w-32  sm:h-auto sm:w-auto;
+  }
+  .contenedor-buscador {
+    position: relative;
+  }
+  
+  #sugerencias {
+    position: absolute;
+    top: 80%;
+    z-index: 999;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #sugerencias li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  #sugerencias li:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .seleccionado{
+    background-color: #d4eef9;
+  }
+
+
+
+
+
+
+
+
+    /* .card0{
+        @apply flex flex-col items-center ml-8 border-2  h-80 border-y-4 border-x-cyan-300 border-x-8 rounded-xl border-slate-100 shadow-lg px-2 py-10;    
+    }
+
+    .card1{
+        @apply flex flex-col items-center ml-6 border-2  h-80 border-y-4 border-x-cyan-300 border-x-8 rounded-xl border-slate-100 shadow-lg px-2 py-10;    
+    }
+
+    .card2{
+        @apply flex flex-col items-center ml-6 border-2  h-80 border-y-4 border-x-cyan-300 border-x-8 rounded-xl border-slate-100 shadow-lg px-2 py-10;    
+    }
+
+    .card3{
+        @apply flex flex-col items-center ml-6 border-2  h-80 border-y-4 border-x-cyan-300 border-x-8 rounded-xl border-slate-100 shadow-lg px-2 py-10;    
+    }
+    
+
+    
+    .imagen0{
+        @apply relative top-4 hover:scale-125 cursor-pointer;
+    }
+    
+    .imagen1{
+        @apply relative bottom-4 hover:scale-125 cursor-pointer;
+    }
+    
+    .imagen2{
+        @apply relative bottom-6 w-32 h-40 hover:scale-125 cursor-pointer;
+    }
+    
+    .imagen3{
+        @apply relative top-8 hover:scale-125 cursor-pointer;
+    }
+
+    
+
+    .precio0{
+        @apply text-center mt-2 font-medium text-lg;
+    }
+    
+    .precio1{
+        @apply text-center -mt-14 font-medium text-lg;
+    }
+    
+    .precio2{
+        @apply text-center relative bottom-4 font-medium text-lg;
+    }
+    
+    .precio3{
+        @apply text-center relative top-16 font-medium text-lg;
+    }
+    
+
+    .Comprar_0{
+        @apply mt-4 outline-none py-2 bg-slate-100 rounded w-1/2 content-center hover:bg-slate-200;
+    }
+    
+    .Comprar_1{
+        @apply mt-4 outline-none py-2 bg-slate-100 rounded w-1/2 content-center hover:bg-slate-200;
+    }
+
+    .Comprar_2{
+        @apply -mt-1  outline-none py-2 bg-slate-100 rounded w-1/2 content-center hover:bg-slate-200;
+    }
+
+    .Comprar_3{
+        @apply relative top-20 -mt-2 outline-none py-2 bg-slate-100 rounded w-1/2 content-center hover:bg-slate-200;
+    } */

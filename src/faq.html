@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <header class="bg-gray-300  sticky top-0 z-10 flex flex-wrap justify-center content-center align-middle h-20 float-right p-2 mb-24 w-full shadow-lg">
+        <div id="container" class="flex flex-wrap justify-center align-middle items-center">
+        </button>
+        
+        <a  class="logo transition-all duration-700 relative right-16" href="/src/index.html"><img class="left-16 w-32 h-20 cursor-pointer" src="../imgs/logo.png" alt="logo" ></a>
+                <div class="flex flex-col justify-center">
+                    <input class="outline-none w-790 bg-gray-200 rounded p-3" type="text" name="" id="search" placeholder="Buscá tu producto..."><ul id="sugerencias"></ul></input>
+                </div>
+                    
+                <button class="btnS bg-gray-200 rounded relative w-12 h-12 right-8 hover:bg-gray-300">
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                </button>
+                
+                <button id="shopping.cart" class="s_cart relative ml-16 bg-logo p-2 rounded">
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                    <P></P>
+                </div>
+                
+            </div>
+            
+        </div>
+    </header>
+    <div id="dash" class="fixed z-10 flex float-left items-start transition-all duration-700 rounded-b-xl w-0 bg-logo h-64">
+        <button id="btn_dash"  class="mt-5 ml-2  hover:bg-gray-50  bg-opacity-50 rounded-full p-1 ">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </button>
+        
+        <div class="catalogo inline-block transition-all duration-700 relative right-64 leading-8 mt-24">
+            <a href="../src/pianos.html"><div class="hover:bg-gray-200 rounded-lg cursor-pointer text-center w-full font-medium">Pianos</div></a>
+            <div class=" hover:bg-gray-200 whitespace-nowrap rounded-lg cursor-pointer  w-full font-medium">Guitarras y bajos</div>
+            <div class="hover:bg-gray-200 rounded-lg cursor-pointer text-center w-28 font-medium">Sintetizadores</div>
+            <div class="hover:bg-gray-200 rounded-lg cursor-pointer text-center w-full font-medium">Percusión</div>
+        </div>
+    </div>
+
+    <section class="container mx-auto relative p-8 w-1/2 h-80 flex flex-col  items-center rounded bg-slate-50 shadow-lg">
+            <div   class="wrapper p-4 text-2xl w-full mb-8 rounded-lg  bg-logo ">
+                <button id="show" class="mx-auto flex flex-row flex-wrap justify-between items-center w-full">¿Cómo hago una compra?
+                    <p id='plus' class=" text-4xl ">+</p>
+                </button>
+    
+                <div id="texto" class="h-0 overflow-hidden transition-all duration-1000">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos mollitia blanditiis quo est, possimus fugiat, eligendi in officia non quibusdam, quasi velit quaerat? Omnis, maxime quam? At nisi consequuntur deserunt.
+
+                    </p>
+                </div>  
+                
+            </div>
+    
+            <div class="wrapper text-2xl w-full p-4 rounded-lg  bg-logo ">
+                <button id="show" class="mx-auto flex flex-row flex-wrap justify-between items-end w-full" >¿Hacen rembolsos?
+                    <p id="plus" class=" text-4xl ">+</p>
+                </button>
+    
+                <div id="texto" class="h-0 overflow-hidden transition-all duration-1000 ">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos mollitia blanditiis quo est, possimus fugiat, eligendi in officia non quibusdam, quasi velit quaerat? Omnis, maxime quam? At nisi consequuntur deserunt.
+                </div>     
+            </div>
+        
+
+
+
+    </section>
+</body>
+<script src="/js/script.js"></script>
+<script src="/js/faq.js"></script>
+<script src="/js/articulosBuscados.js" ></script>
+</html>
